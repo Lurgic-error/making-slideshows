@@ -1,0 +1,101 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", san-serif;
+}
+
+.carousel {
+  height: auto;
+  overflow: hidden;
+  max-width: 1000px;
+  position: relative;
+}
+
+.carouse .carousel__item .carousel__item--hidden {
+  display: none;
+}
+
+.carouse .carousel__item .carousel__item--visible {
+  display: block;
+}
+
+.carousel__img {
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.carousel__item--hidden {
+  display: none;
+}
+
+.carousel__item--visible {
+  display: block;
+  -webkit-animation: fade .5s;
+          animation: fade .5s;
+}
+
+.carousel__actions {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.carousel__btn {
+  padding: 5px 10px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+
+.carousel__btn--prev {
+  margin-left: 16px;
+}
+
+.carousel__btn--next {
+  margin-right: 16px;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: opacity ease-in;
+            transform: opacity ease-in;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: opacity ease-in;
+            transform: opacity ease-in;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
